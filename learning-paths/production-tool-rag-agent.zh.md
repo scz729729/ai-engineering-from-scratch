@@ -2,7 +2,7 @@
 
 给已经会写 Java、Python、JavaScript，用过 Dify 和 n8n，做过提示词，并对大模型有基本概念的人。
 
-上游仍是 [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) 的 523 节、20 个阶段。这份文件只规定你这 10 周学哪几节、跳过什么、最后交出什么。正文课保持英文，按仓库自己的学法走：读、自己把关键代码打出来、从仓库根目录跑、留下证据。
+上游仍是 [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) 的 523 节、20 个阶段。这份文件只规定你这 10 周学哪几节、跳过什么、最后交出什么。下表每节都有中文课文 `docs/zh.md`。代码、命令和标识符保持英文，以同目录 `docs/en.md` 和 `code/` 为准。
 
 ## 目标
 
@@ -20,7 +20,7 @@
 
 ## 怎么学一节课
 
-1. 打开下表里的目录，读 `docs/en.md`（若该课用别的文件名，以该目录的说明为准）。
+1. 打开下表里的链接，读 `docs/zh.md`。
 2. 关键代码自己打，不要只看。
 3. 在仓库根目录运行该课给出的命令。
 4. 在 `notes/week-NN.md` 留下：命令、工作目录、退出码、一段有意义的输出、你改过或生成的文件。
@@ -34,27 +34,27 @@
 
 ### 第 1 周 · 从提示词走到检索（约 7.5 小时）
 
-先准备语料：选一份你能公开的文档，不少于能切出 20 个块。不要放密钥、客户数据和内网地址。环境缺依赖时，只做 [第 0 阶段第 1 课](../phases/00-setup-and-tooling/01-dev-environment)，不要把第 0 阶段学完。
+先准备语料：选一份你能公开的文档，不少于能切出 20 个块。不要放密钥、客户数据和内网地址。环境缺依赖时，只做 [第 0 阶段第 1 课](../phases/00-setup-and-tooling/01-dev-environment/docs/zh.md)，不要把第 0 阶段学完。
 
 | 课 | 估计 | 这节要留下的东西 |
 | --- | --- | --- |
-| [11.03 结构化输出](../phases/11-llm-engineering/03-structured-outputs) | 75 分钟 | 一个会校验失败的 schema |
-| [11.04 嵌入](../phases/11-llm-engineering/04-embeddings) | 75 分钟 | 你的语料里两句近义、两句无关的相似度 |
-| [11.05 上下文工程](../phases/11-llm-engineering/05-context-engineering) | 75 分钟 | 一段你主动删掉的上下文，以及为什么删 |
-| [11.06 RAG](../phases/11-llm-engineering/06-rag) | 75 分钟 | 能对你的语料回答一个问题 |
-| [11.07 进阶 RAG](../phases/11-llm-engineering/07-advanced-rag) | 75 分钟 | 同问句改一种切块或重排后的对比 |
+| [11.03 结构化输出](../phases/11-llm-engineering/03-structured-outputs/docs/zh.md) | 75 分钟 | 一个会校验失败的 schema |
+| [11.04 嵌入](../phases/11-llm-engineering/04-embeddings/docs/zh.md) | 75 分钟 | 你的语料里两句近义、两句无关的相似度 |
+| [11.05 上下文工程](../phases/11-llm-engineering/05-context-engineering/docs/zh.md) | 75 分钟 | 一段你主动删掉的上下文，以及为什么删 |
+| [11.06 RAG](../phases/11-llm-engineering/06-rag/docs/zh.md) | 75 分钟 | 能对你的语料回答一个问题 |
+| [11.07 进阶 RAG](../phases/11-llm-engineering/07-advanced-rag/docs/zh.md) | 75 分钟 | 同问句改一种切块或重排后的对比 |
 
 ### 第 2 周 · 先会打分，再加功能（约 7.5 小时）
 
 | 课 | 估计 | 这节要留下的东西 |
 | --- | --- | --- |
-| [11.10 评测](../phases/11-llm-engineering/10-evaluation) | 45 分钟 | 5 条问答的对错记录 |
-| [11.11 缓存、限流、成本](../phases/11-llm-engineering/11-caching-cost) | 45 分钟 | 一次调用的 token 和估算费用 |
-| [11.12 护栏](../phases/11-llm-engineering/12-guardrails) | 45 分钟 | 一条被拦住的输入和拦住它的规则 |
-| [11.13 生产级 LLM 应用](../phases/11-llm-engineering/13-production-app) | 120 分钟 | 应用的目录结构，而不是笔记本 |
-| [11.15 提示缓存](../phases/11-llm-engineering/15-prompt-caching) | 60 分钟 | 有缓存和无缓存的费用差 |
-| [11.17 框架取舍](../phases/11-llm-engineering/17-agent-framework-tradeoffs) | 45 分钟 | 半页对照：这件事在 Dify 或 n8n 里是哪个节点，在代码里是哪一层 |
-| [5.27 评测框架](../phases/05-nlp-foundations-to-advanced/27-llm-evaluation-frameworks) | 75 分钟 | faithfulness 和 answer relevance 各用一句话解释，并各举你语料里的一个例子 |
+| [11.10 评测](../phases/11-llm-engineering/10-evaluation/docs/zh.md) | 45 分钟 | 5 条问答的对错记录 |
+| [11.11 缓存、限流、成本](../phases/11-llm-engineering/11-caching-cost/docs/zh.md) | 45 分钟 | 一次调用的 token 和估算费用 |
+| [11.12 护栏](../phases/11-llm-engineering/12-guardrails/docs/zh.md) | 45 分钟 | 一条被拦住的输入和拦住它的规则 |
+| [11.13 生产级 LLM 应用](../phases/11-llm-engineering/13-production-app/docs/zh.md) | 120 分钟 | 应用的目录结构，而不是笔记本 |
+| [11.15 提示缓存](../phases/11-llm-engineering/15-prompt-caching/docs/zh.md) | 60 分钟 | 有缓存和无缓存的费用差 |
+| [11.17 框架取舍](../phases/11-llm-engineering/17-agent-framework-tradeoffs/docs/zh.md) | 45 分钟 | 半页对照：这件事在 Dify 或 n8n 里是哪个节点，在代码里是哪一层 |
+| [5.27 评测框架](../phases/05-nlp-foundations-to-advanced/27-llm-evaluation-frameworks/docs/zh.md) | 75 分钟 | faithfulness 和 answer relevance 各用一句话解释，并各举你语料里的一个例子 |
 
 ### 第 3 周 · 工具（约 7.5 小时）
 
@@ -62,12 +62,12 @@
 
 | 课 | 估计 | 这节要留下的东西 |
 | --- | --- | --- |
-| [13.01 工具接口](../phases/13-tools-and-protocols/01-the-tool-interface) | 45 分钟 | 一个工具的输入、输出、失败三种形状 |
-| [13.02 函数调用](../phases/13-tools-and-protocols/02-function-calling-deep-dive) | 75 分钟 | 一次真实的工具往返 |
-| [11.09 函数调用与工具使用](../phases/11-llm-engineering/09-function-calling) | 75 分钟 | 模型选错工具时你怎么发现 |
-| [13.03 并行和流式工具调用](../phases/13-tools-and-protocols/03-parallel-and-streaming-tool-calls) | 75 分钟 | 两个工具谁先返回，结果如何合并 |
-| [13.05 工具 schema 设计](../phases/13-tools-and-protocols/05-tool-schema-design) | 45 分钟 | 毕业项目两个工具的草案 schema |
-| [13.15 工具投毒](../phases/13-tools-and-protocols/15-mcp-security-tool-poisoning) | 60 分钟 | 一段会误导模型的工具描述，以及你拒绝它的规则 |
+| [13.01 工具接口](../phases/13-tools-and-protocols/01-the-tool-interface/docs/zh.md) | 45 分钟 | 一个工具的输入、输出、失败三种形状 |
+| [13.02 函数调用](../phases/13-tools-and-protocols/02-function-calling-deep-dive/docs/zh.md) | 75 分钟 | 一次真实的工具往返 |
+| [11.09 函数调用与工具使用](../phases/11-llm-engineering/09-function-calling/docs/zh.md) | 75 分钟 | 模型选错工具时你怎么发现 |
+| [13.03 并行和流式工具调用](../phases/13-tools-and-protocols/03-parallel-and-streaming-tool-calls/docs/zh.md) | 75 分钟 | 两个工具谁先返回，结果如何合并 |
+| [13.05 工具 schema 设计](../phases/13-tools-and-protocols/05-tool-schema-design/docs/zh.md) | 45 分钟 | 毕业项目两个工具的草案 schema |
+| [13.15 工具投毒](../phases/13-tools-and-protocols/15-mcp-security-tool-poisoning/docs/zh.md) | 60 分钟 | 一段会误导模型的工具描述，以及你拒绝它的规则 |
 | 练习 | 75 分钟 | 把两个 schema 写成代码里的函数签名，先不接 MCP |
 
 两个工具就定成：
@@ -81,12 +81,12 @@
 
 | 课 | 估计 | 这节要留下的东西 |
 | --- | --- | --- |
-| [13.06 MCP 基础](../phases/13-tools-and-protocols/06-mcp-fundamentals) | 55 分钟 | 一次 JSON-RPC 请求和响应原文 |
-| [13.07 写一个 MCP 服务器](../phases/13-tools-and-protocols/07-building-an-mcp-server) | 85 分钟 | 一个能列出工具的服务器 |
-| [13.08 写一个 MCP 客户端](../phases/13-tools-and-protocols/08-building-an-mcp-client) | 85 分钟 | 客户端发现并调用其中一个工具 |
-| [13.09 传输](../phases/13-tools-and-protocols/09-mcp-transports) | 65 分钟 | 你选定 stdio 或 HTTP 的理由 |
-| [13.28 工具契约](../phases/13-tools-and-protocols/28-mcp-tool-contracts-and-content) | 120 分钟 | `search_docs` 和 `get_cost_report` 都挂在这个服务器上 |
-| [13.29 可靠性](../phases/13-tools-and-protocols/29-mcp-reliability-cancellation-and-flow-control) | 120 分钟 | 工具超时或取消时的一条记录 |
+| [13.06 MCP 基础](../phases/13-tools-and-protocols/06-mcp-fundamentals/docs/zh.md) | 55 分钟 | 一次 JSON-RPC 请求和响应原文 |
+| [13.07 写一个 MCP 服务器](../phases/13-tools-and-protocols/07-building-an-mcp-server/docs/zh.md) | 85 分钟 | 一个能列出工具的服务器 |
+| [13.08 写一个 MCP 客户端](../phases/13-tools-and-protocols/08-building-an-mcp-client/docs/zh.md) | 85 分钟 | 客户端发现并调用其中一个工具 |
+| [13.09 传输](../phases/13-tools-and-protocols/09-mcp-transports/docs/zh.md) | 65 分钟 | 你选定 stdio 或 HTTP 的理由 |
+| [13.28 工具契约](../phases/13-tools-and-protocols/28-mcp-tool-contracts-and-content/docs/zh.md) | 120 分钟 | `search_docs` 和 `get_cost_report` 都挂在这个服务器上 |
+| [13.29 可靠性](../phases/13-tools-and-protocols/29-mcp-reliability-cancellation-and-flow-control/docs/zh.md) | 120 分钟 | 工具超时或取消时的一条记录 |
 
 第 13 阶段第 22–27 课是 Agent Skills 专线，第 16–18 课是 OAuth 和生产鉴权。这条毕业项目用本地 stdio，先不学。以后要接到别人的远程服务器，再回来。
 
@@ -94,25 +94,25 @@
 
 | 课 | 估计 | 这节要留下的东西 |
 | --- | --- | --- |
-| [14.01 Agent 循环](../phases/14-agent-engineering/01-the-agent-loop) | 60 分钟 | 一个没有框架的循环，能调用你的两个工具 |
-| [14.02 先计划再执行](../phases/14-agent-engineering/02-rewoo-plan-and-execute) | 60 分钟 | 一个问题的计划步骤，以及哪一步被改掉了 |
-| [14.06 工具使用](../phases/14-agent-engineering/06-tool-use-and-function-calling) | 60 分钟 | 循环里一次检索、一次费用查询的轨迹 |
-| [14.12 工作流模式](../phases/14-agent-engineering/12-anthropic-workflow-patterns) | 60 分钟 | 标出你的场景是「工作流」还是「Agent」，以及为什么 |
-| [11.16 状态机](../phases/11-llm-engineering/16-langgraph-state-machines) | 75 分钟 | 检索、工具、回答、拒绝四个状态 |
-| [14.03 反思](../phases/14-agent-engineering/03-reflexion-verbal-rl) | 60 分钟 | 一次答错后，循环怎样改口 |
-| [14.26 失败模式](../phases/14-agent-engineering/26-failure-modes-agentic) | 60 分钟 | 你的循环已经会犯的一种错 |
+| [14.01 Agent 循环](../phases/14-agent-engineering/01-the-agent-loop/docs/zh.md) | 60 分钟 | 一个没有框架的循环，能调用你的两个工具 |
+| [14.02 先计划再执行](../phases/14-agent-engineering/02-rewoo-plan-and-execute/docs/zh.md) | 60 分钟 | 一个问题的计划步骤，以及哪一步被改掉了 |
+| [14.06 工具使用](../phases/14-agent-engineering/06-tool-use-and-function-calling/docs/zh.md) | 60 分钟 | 循环里一次检索、一次费用查询的轨迹 |
+| [14.12 工作流模式](../phases/14-agent-engineering/12-anthropic-workflow-patterns/docs/zh.md) | 60 分钟 | 标出你的场景是「工作流」还是「Agent」，以及为什么 |
+| [11.16 状态机](../phases/11-llm-engineering/16-langgraph-state-machines/docs/zh.md) | 75 分钟 | 检索、工具、回答、拒绝四个状态 |
+| [14.03 反思](../phases/14-agent-engineering/03-reflexion-verbal-rl/docs/zh.md) | 60 分钟 | 一次答错后，循环怎样改口 |
+| [14.26 失败模式](../phases/14-agent-engineering/26-failure-modes-agentic/docs/zh.md) | 60 分钟 | 你的循环已经会犯的一种错 |
 
 ### 第 6 周 · 记忆、观测、用评测驱动（约 7 小时）
 
 | 课 | 估计 | 这节要留下的东西 |
 | --- | --- | --- |
-| [14.07 记忆](../phases/14-agent-engineering/07-memory-virtual-context-memgpt) | 75 分钟 | 什么放进窗口，什么只留在检索里 |
-| [14.23 OpenTelemetry](../phases/14-agent-engineering/23-otel-genai-conventions) | 60 分钟 | 一次调用的 span 里有哪些字段 |
-| [14.24 可观测性](../phases/14-agent-engineering/24-agent-observability-platforms) | 45 分钟 | 你选一个本地日志或一个平台，并说明不选另一个的原因 |
-| [14.27 提示注入](../phases/14-agent-engineering/27-prompt-injection-defense) | 75 分钟 | 一条注入样本和拦截结果 |
-| [14.30 用评测驱动开发](../phases/14-agent-engineering/30-eval-driven-agent-development) | 60 分钟 | 先写失败用例，再改循环 |
-| [14.38 验证闸门](../phases/14-agent-engineering/38-verification-gates) | 55 分钟 | 一个不过闸门就不能回答用户的条件 |
-| [14.29 生产运行时](../phases/14-agent-engineering/29-production-runtimes) | 60 分钟 | 你的程序如何启动、如何停 |
+| [14.07 记忆](../phases/14-agent-engineering/07-memory-virtual-context-memgpt/docs/zh.md) | 75 分钟 | 什么放进窗口，什么只留在检索里 |
+| [14.23 OpenTelemetry](../phases/14-agent-engineering/23-otel-genai-conventions/docs/zh.md) | 60 分钟 | 一次调用的 span 里有哪些字段 |
+| [14.24 可观测性](../phases/14-agent-engineering/24-agent-observability-platforms/docs/zh.md) | 45 分钟 | 你选一个本地日志或一个平台，并说明不选另一个的原因 |
+| [14.27 提示注入](../phases/14-agent-engineering/27-prompt-injection-defense/docs/zh.md) | 75 分钟 | 一条注入样本和拦截结果 |
+| [14.30 用评测驱动开发](../phases/14-agent-engineering/30-eval-driven-agent-development/docs/zh.md) | 60 分钟 | 先写失败用例，再改循环 |
+| [14.38 验证闸门](../phases/14-agent-engineering/38-verification-gates/docs/zh.md) | 55 分钟 | 一个不过闸门就不能回答用户的条件 |
+| [14.29 生产运行时](../phases/14-agent-engineering/29-production-runtimes/docs/zh.md) | 60 分钟 | 你的程序如何启动、如何停 |
 
 ### 第 7 周 · 费用和边界（约 6 小时）
 
@@ -120,21 +120,21 @@
 
 | 课 | 估计 | 这节要留下的东西 |
 | --- | --- | --- |
-| [17.08 推理指标](../phases/17-infrastructure-and-production/08-inference-metrics-goodput) | 60 分钟 | 一次请求的 TTFT 和总延迟 |
-| [17.13 观测栈](../phases/17-infrastructure-and-production/13-llm-observability) | 60 分钟 | 你要看的三张图：延迟、费用、失败率 |
-| [17.16 模型路由](../phases/17-infrastructure-and-production/16-model-routing) | 60 分钟 | 哪类问题走便宜模型，哪类必须走强模型 |
-| [17.19 AI 网关](../phases/17-infrastructure-and-production/19-ai-gateways) | 60 分钟 | 密钥放在哪里，应用代码里不再出现密钥 |
-| [17.25 密钥、PII、审计](../phases/17-infrastructure-and-production/25-security-secrets-audit) | 60 分钟 | 一条审计日志样例 |
-| [17.27 FinOps](../phases/17-infrastructure-and-production/27-finops-llms) | 60 分钟 | 按请求累计的费用表 |
+| [17.08 推理指标](../phases/17-infrastructure-and-production/08-inference-metrics-goodput/docs/zh.md) | 60 分钟 | 一次请求的 TTFT 和总延迟 |
+| [17.13 观测栈](../phases/17-infrastructure-and-production/13-llm-observability/docs/zh.md) | 60 分钟 | 你要看的三张图：延迟、费用、失败率 |
+| [17.16 模型路由](../phases/17-infrastructure-and-production/16-model-routing/docs/zh.md) | 60 分钟 | 哪类问题走便宜模型，哪类必须走强模型 |
+| [17.19 AI 网关](../phases/17-infrastructure-and-production/19-ai-gateways/docs/zh.md) | 60 分钟 | 密钥放在哪里，应用代码里不再出现密钥 |
+| [17.25 密钥、PII、审计](../phases/17-infrastructure-and-production/25-security-secrets-audit/docs/zh.md) | 60 分钟 | 一条审计日志样例 |
+| [17.27 FinOps](../phases/17-infrastructure-and-production/27-finops-llms/docs/zh.md) | 60 分钟 | 按请求累计的费用表 |
 
 ### 第 8 周 · 注入和评分尺（约 7 小时）
 
 | 课 | 估计 | 这节要留下的东西 |
 | --- | --- | --- |
-| [18.15 间接提示注入](../phases/18-ethics-safety-alignment/15-indirect-prompt-injection) | 75 分钟 | 一段藏在文档里的指令 |
-| [19.68 RAG 评测指标](../phases/19-capstone-projects/68-rag-eval-precision-recall) | 90 分钟 | 你的 5 条可回答问题上的命中情况 |
-| [19.83 注入检测](../phases/19-capstone-projects/83-prompt-injection-detector) | 90 分钟 | 一个能标出注入的小检测器或规则 |
-| [19.27 评测夹具](../phases/19-capstone-projects/27-eval-harness-fixture-tasks) | 90 分钟 | 一个能重复跑的用例文件 |
+| [18.15 间接提示注入](../phases/18-ethics-safety-alignment/15-indirect-prompt-injection/docs/zh.md) | 75 分钟 | 一段藏在文档里的指令 |
+| [19.68 RAG 评测指标](../phases/19-capstone-projects/68-rag-eval-precision-recall/docs/zh.md) | 90 分钟 | 你的 5 条可回答问题上的命中情况 |
+| [19.83 注入检测](../phases/19-capstone-projects/83-prompt-injection-detector/docs/zh.md) | 90 分钟 | 一个能标出注入的小检测器或规则 |
+| [19.27 评测夹具](../phases/19-capstone-projects/27-eval-harness-fixture-tasks/docs/zh.md) | 90 分钟 | 一个能重复跑的用例文件 |
 | 起草 | 60 分钟 | 毕业项目的 15 条用例初稿，先放进仓库，先不必全过 |
 
 ### 第 9–10 周 · 毕业项目（约 22 小时）
@@ -194,11 +194,11 @@ tool-rag-agent/
 
 按这个顺序，加到大约 100 小时为止：
 
-1. [13.30 MCP 注册与漂移](../phases/13-tools-and-protocols/30-mcp-registry-supply-chain-and-drift)（90 分钟）
-2. [14.13 持久执行与检查点](../phases/14-agent-engineering/13-langgraph-stateful-graphs)（75 分钟）
-3. [17.20 影子发布和金丝雀](../phases/17-infrastructure-and-production/20-shadow-canary-progressive)（60 分钟）
-4. [17.22 压测](../phases/17-infrastructure-and-production/22-load-testing-llm-apis)（75 分钟）
-5. [14.16 追踪与护栏 SDK](../phases/14-agent-engineering/16-openai-agents-sdk)（75 分钟），只用来对照你自己的循环
+1. [13.30 MCP 注册与漂移](../phases/13-tools-and-protocols/30-mcp-registry-supply-chain-and-drift/docs/zh.md)（90 分钟）
+2. [14.13 持久执行与检查点](../phases/14-agent-engineering/13-langgraph-stateful-graphs/docs/zh.md)（75 分钟）
+3. [17.20 影子发布和金丝雀](../phases/17-infrastructure-and-production/20-shadow-canary-progressive/docs/zh.md)（60 分钟）
+4. [17.22 压测](../phases/17-infrastructure-and-production/22-load-testing-llm-apis/docs/zh.md)（75 分钟）
+5. [14.16 追踪与护栏 SDK](../phases/14-agent-engineering/16-openai-agents-sdk/docs/zh.md)（75 分钟），只用来对照你自己的循环
 
 ## 明确不学
 
