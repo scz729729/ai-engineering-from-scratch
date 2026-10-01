@@ -45,6 +45,10 @@
 <p align="center"><sub><b>114,584</b> readers &nbsp;·&nbsp; <b>181,995</b> page views in the last 30 days &nbsp;·&nbsp; as of 2026-08-29</sub></p>
 <!-- STATS:END -->
 
+> **This fork's path:** [10-week tool-using RAG agent (中文)](learning-paths/production-tool-rag-agent.zh.md).
+> For someone who already writes Python and JavaScript and has used Dify or n8n.
+> The upstream 523 lessons stay intact.
+
 ## Start here: choose what you want to build
 
 You do not need to scan 523 lessons before beginning. Pick one goal. Each link
